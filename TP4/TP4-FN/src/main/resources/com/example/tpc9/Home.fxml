@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #004e5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tpc9.SignInUser">
+   <children>
+      <Rectangle fx:id="teacherBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="131.0" layoutX="72.0" layoutY="151.0" onMouseClicked="#showArrow" opacity="0.62" stroke="WHITE" strokeType="INSIDE" width="133.0" />
+      <PasswordField fx:id="passwordField" layoutX="620.0" layoutY="204.0" prefHeight="32.0" prefWidth="194.0" promptText="                             password" style="-fx-background-radius: 8;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="131.0" layoutX="241.0" layoutY="150.0" opacity="0.62" stroke="WHITE" strokeType="INSIDE" width="133.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="131.0" layoutX="411.0" layoutY="152.0" opacity="0.62" stroke="WHITE" strokeType="INSIDE" width="133.0" />
+      <ImageView fitHeight="121.0" fitWidth="124.0" layoutX="415.0" layoutY="157.0">
+         <image>
+            <Image url="@Images/graduated.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="teacherIMG" fitHeight="117.0" fitWidth="111.0" layoutX="82.0" layoutY="157.0" onMouseClicked="#showArrow">
+         <image>
+            <Image url="@Images/professor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="119.0" fitWidth="118.0" layoutX="248.0" layoutY="155.0">
+         <image>
+            <Image url="@Images/employee.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameTextField" layoutX="620.0" layoutY="151.0" prefHeight="32.0" prefWidth="194.0" promptText="                            username" style="-fx-background-radius: 8;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="786.0" layoutY="153.0">
+         <image>
+            <Image url="@Images/account.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="787.0" layoutY="208.0">
+         <image>
+            <Image url="@Images/key.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="621.0" layoutY="279.0" opacity="0.78" text="No Account?" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonLogin" layoutX="663.0" layoutY="328.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="41.0" prefWidth="109.0" style="-fx-background-radius: 57; -fx-background-color: #d8d8d8;" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="65.0" layoutY="482.0" prefHeight="33.0" prefWidth="759.0" text="“Dá bus pedrada sem ninguêm fca t sabê bo eh kenhe.“" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="58.0" opacity="0.76" prefHeight="33.0" prefWidth="213.0" text="Welcome Back" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="signUpButton" layoutX="732.0" layoutY="272.0" mnemonicParsing="false" onAction="#signUpButtonOnAction" style="-fx-background-color: transparent;" text="Sign Up" textFill="#0096ff" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="324.0" opacity="0.0" prefHeight="54.0" prefWidth="469.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="sdsdsd">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="619.0" layoutY="242.0" mnemonicParsing="false" opacity="0.63" style="-fx-background-color: transparent;" text="forgot?" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="179.0" layoutX="663.0" layoutY="415.0">
+         <image>
+            <Image url="@Images/Ativo%206@4x.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="close" fitHeight="40.0" fitWidth="40.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#closeHome" opacity="0.7">
+         <image>
+            <Image url="@Images/4x/close@4x.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="54.0" layoutX="13.0" layoutY="9.0" onMouseClicked="#closeHome" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="58.0" />
+   </children>
+</Pane>

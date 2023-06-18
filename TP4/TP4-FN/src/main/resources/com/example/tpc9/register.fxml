@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #004e5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tpc9.SignUpUser">
+   <children>
+      <Label layoutX="397.0" layoutY="58.0" text="Register " textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Circle fill="WHITE" layoutX="198.0" layoutY="320.0" onMouseClicked="#goProf" opacity="0.62" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="456.0" layoutY="323.0" onMouseClicked="#goEmployee" opacity="0.62" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="709.0" layoutY="319.0" onMouseClicked="#registUser" opacity="0.62" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="167.0" fitWidth="159.0" layoutX="631.0" layoutY="229.0" onMouseClicked="#registUser">
+         <image>
+            <Image url="@Images/graduated.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="143.0" layoutX="125.0" layoutY="234.0" onMouseClicked="#goProf">
+         <image>
+            <Image url="@Images/professor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="164.0" layoutX="373.0" layoutY="229.0" onMouseClicked="#goEmployee">
+         <image>
+            <Image url="@Images/employee.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="359.0" layoutY="526.0" text="Who are you?" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="68.0" layoutX="39.0" layoutY="54.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/go-back.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

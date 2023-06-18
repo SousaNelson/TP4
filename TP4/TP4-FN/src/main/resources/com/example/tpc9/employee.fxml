@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #004e5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="294.0" layoutX="74.0" layoutY="75.0" opacity="0.57" stroke="BLACK" strokeType="INSIDE" width="299.0" />
+      <ImageView fitHeight="271.0" fitWidth="267.0" layoutX="90.0" layoutY="84.0">
+         <image>
+            <Image url="@Images/employee.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="223.0" fitWidth="232.0" layoutX="189.0" layoutY="395.0">
+         <image>
+            <Image url="@Images/photo@4x.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="empFirstName" alignment="CENTER" layoutX="479.0" layoutY="128.0" prefHeight="32.0" prefWidth="221.0" promptText="First Name" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Label layoutX="664.0" layoutY="63.0" opacity="0.83" prefHeight="31.0" prefWidth="211.0" text="Create An Account" textFill="WHITE" underline="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="empLastName" alignment="CENTER" layoutX="478.0" layoutY="199.0" prefHeight="32.0" prefWidth="221.0" promptText="Last Name" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="empUsername" alignment="CENTER" layoutX="478.0" layoutY="269.0" prefHeight="32.0" prefWidth="221.0" promptText="Username" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="empPassword" alignment="CENTER" layoutX="427.0" layoutY="412.0" prefHeight="32.0" prefWidth="221.0" promptText="Password" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="empPassword2" alignment="CENTER" layoutX="665.0" layoutY="412.0" prefHeight="32.0" prefWidth="221.0" promptText="Confirm Password" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="empDay" alignment="CENTER" layoutX="477.0" layoutY="335.0" prefHeight="20.0" prefWidth="116.0" promptText="dia" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="empMonth" alignment="CENTER" layoutX="602.0" layoutY="334.0" prefHeight="20.0" prefWidth="116.0" promptText="mes" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="profYear" alignment="CENTER" layoutX="728.0" layoutY="332.0" prefHeight="20.0" prefWidth="116.0" promptText="ano" style="-fx-background-radius: 9; -fx-background-color: #fff;">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <Button layoutX="83.0" layoutY="421.0" mnemonicParsing="false" style="-fx-background-radius: 20; -fx-background-color: #fff;" text="add photo" textFill="#004f59">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="signEmp" layoutX="532.0" layoutY="509.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="149.0" style="-fx-background-radius: 19; -fx-background-color: #111132;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="goHome" layoutX="683.0" layoutY="509.0" mnemonicParsing="false" onAction="#regProf" prefHeight="52.0" prefWidth="149.0" style="-fx-background-radius: 19; -fx-background-color: transparent;" text="cancel" underline="true">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
